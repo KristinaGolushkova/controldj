@@ -1,0 +1,25 @@
+<!-- templates/base.html -->
+{% load static %}
+<html>
+  <head>
+    <title>Сотрудники организации</title>
+
+  </head>
+  <body>
+
+
+
+    <div>
+      <header>
+        <div class="nav-left">
+          <h1><a href="{% url 'home' %}">Сотрудники организации</a></h1>
+        </div>
+        <div class="nav-right">
+          <a href="{% url 'post_new' %}">+ Добавить работника</a>
+        </div>
+      </header>
+      {% block content %}
+      {% endblock content %}
+    </div>
+  </body>
+</html>
